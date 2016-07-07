@@ -34,8 +34,10 @@ Install for all users and add Python to PATH (through installer).
 Run the following commands from elevated command prompt (cmd.exe):
 
 ```
-conda install pyqt lxml
+conda install pyqt lxml numpy
 (conda install -c anaconda pyqt=4.11.4)
+conda install anacondaclient
+conda install -c https://conda.anaconda.org/menpo opencv
 ```
 
 because of a [bug] (https://groups.google.com/a/continuum.io/forum/#!topic/anaconda/qZBd_tYWY84) edit
