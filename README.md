@@ -32,9 +32,8 @@ Open cmd and go to [labelImg]
 
 
 (or alternate
-download and setup [Python 2.6](https://www.python.org/downloads/windows/) or later and [PyQt4](https://www.riverbankcomputing.com/software/pyqt/download).)
-
-Also, you need to install other python dependencies.
+download and setup [Python 2.6](https://www.python.org/downloads/windows/) or later and [PyQt4](https://www.riverbankcomputing.com/software/pyqt/download).
+Also, you need to install other python dependencies.)
 
 * Linux/Ubuntu/Mac
 
