@@ -13,6 +13,29 @@ The annotation file will be saved as an XML file. The annotation format is PASCA
 [![Demo video](https://j.gifs.com/4xy9z2.gif)](https://www.youtube.com/watch?v=p0nR2YsCY_U&feature=youtu.be)
 
 ## Dependencies
+* Windows
+
+Need to download Miniconda 2.7 64-bit Windows installer [from Miniconda website] (http://conda.pydata.org/miniconda.html).
+Install for all users and add Python to PATH (through installer).
+
+Run the following commands from elevated command prompt (cmd.exe):
+
+```
+conda install pyqt lxml numpy
+```
+
+Open cmd and go to [labelImg]
+
+`$ pyrcc4 -o resources.py resources.qrc`
+
+`$ python labelImg.py`
+
+
+(or alternate
+download and setup [Python 2.6](https://www.python.org/downloads/windows/) or later and [PyQt4](https://www.riverbankcomputing.com/software/pyqt/download).)
+
+Also, you need to install other python dependencies.
+
 * Linux/Ubuntu/Mac
 
 Requires at least [Python 2.6](http://www.python.org/getit/) and has been tested with [PyQt
@@ -25,42 +48,6 @@ In order to build the resource and assets, you need to install pyqt4-dev-tools:
 `$ make all`
 
 `$ ./labelImg.py`
-
-* Windows
-
-Need to download Miniconda 2.7 64-bit Windows installer [from Miniconda website] (http://conda.pydata.org/miniconda.html).
-Install for all users and add Python to PATH (through installer).
-
-Run the following commands from elevated command prompt (cmd.exe):
-
-```
-conda install pyqt lxml numpy
-(conda install -c anaconda pyqt=4.11.4)
-conda install anacondaclient
-conda install -c https://conda.anaconda.org/menpo opencv
-```
-
-because of a [bug] (https://groups.google.com/a/continuum.io/forum/#!topic/anaconda/qZBd_tYWY84) edit
-in Minicona2/Scripts/pyrcc4.bat the line:
-
-```
-"%~dp0\..\Lib\site-packages\PyQt4\pyrcc4" %*
-```
-to
-```
-"%~dp0\..\Library\bin\pyrcc4" %*
-```
-
-(or alternate
-download and setup [Python 2.6](https://www.python.org/downloads/windows/) or later and [PyQt4](https://www.riverbankcomputing.com/software/pyqt/download).)
-
-Also, you need to install other python dependencies.
- 
-Open cmd and go to [labelImg]
-
-`$ pyrcc4 -o resources.py resources.qrc`
-
-`$ python labelImg.py`
 
 ## Usage
 After cloning the code, you should run `$ make all` to generate the resource file.
