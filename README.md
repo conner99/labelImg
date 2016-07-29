@@ -22,6 +22,7 @@ Run the following commands from elevated command prompt (cmd.exe):
 
 ```
 conda install pyqt lxml numpy
+conda install -c https://conda.anaconda.org/menpo opencv
 ```
 
 Open cmd and go to [labelImg]

@@ -1,6 +1,7 @@
 import json
 import os.path
 import numpy
+import cv2
 import sys
 from pascal_voc_io import PascalVocWriter
 from base64 import b64encode, b64decode
